@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-bent-stripes {
+    background: conic-gradient(
+      white 0deg 150deg,
+      /* Adjust the start and end angles for the bend */ transparent 150deg
+        210deg,
+      white 210deg 360deg
+    );
+  }
+}
+
+:root {
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  /* line-height: 1.5; */
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+  color: rgba(0, 0, 0, 0.87);
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-text-size-adjust: 100%; */
+}
+
+* {
+  margin: 0;
+
+  ::-webkit-scrollbar-track {
+    background-color: #ffff;
+    width: 1px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #2e76da;
+    width: 1px;
+    border-radius: 30px;
+  }
+  ::-webkit-scrollbar {
+    background-color: #2e76da;
+    width: 9px;
+    height: 9px;
+  }
+}
