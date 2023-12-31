@@ -1,4 +1,4 @@
-import { FC, HTMLAttributes } from "react";
+import { FC } from "react";
 import { twMerge } from "tailwind-merge";
 import { iShade } from "../utils/interfaces";
 
