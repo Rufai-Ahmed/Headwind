@@ -171,3 +171,12 @@ export interface iInput2 extends HTMLAttributes<HTMLElement> {
   dark?: boolean;
   light?: boolean;
 }
+
+export interface iFlyout {
+  head?: boolean;
+  simple?: boolean;
+  simpleDesc?: boolean;
+  twoCol?: boolean;
+  full?: boolean;
+  stacked?: boolean;
+}

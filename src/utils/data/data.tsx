@@ -11,6 +11,7 @@ import signin from "../../Assets/Components/signin.png";
 import m from "../../Assets/Components/modal.png";
 import header from "../../Assets/Components/header.png";
 import navbars from "../../Assets/Components/navbars.png";
+import flyout from "../../Assets/Components/flyout.png";
 import { Dashboard } from "../../Templates/Dashboard";
 import { SideLayout } from "../../Components/Layouts/SideLayout";
 import { Headings } from "../../Templates/Headings";
@@ -29,6 +30,8 @@ import { headerData } from "./headerData";
 import { HeaderDisplay } from "../../Templates/HeaderDisplay";
 import { navbarsData } from "./navbarsData";
 import { NavbarsDisplay } from "../../Templates/NavbarsDisplay";
+import { flyoutData } from "./flyoutData";
+import { FlyoutDisplay } from "../../Templates/FlyoutDisplay";
 
 export const heroBtnData = [
   { text: "Browse components", icon: <FaArrowRight />, choice: "" },
@@ -242,6 +245,22 @@ export const mainCompData = [
         search={el.search}
         dark={el.dark}
         head={el.head}
+      />
+    )),
+  },
+  {
+    type: "Flyout Menus",
+    num: flyoutData.length,
+    img: flyout,
+    component: flyoutData.map((el, i) => (
+      <FlyoutDisplay
+        twoCol={el.twoCol}
+        simple={el.simple}
+        simpleDesc={el.simpleDesc}
+        stacked={el.stacked}
+        full={el.full}
+        head={el.head}
+        key={i}
       />
     )),
   },
