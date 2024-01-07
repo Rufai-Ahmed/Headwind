@@ -18,7 +18,7 @@ export const Applications = () => {
   return (
     <div>
       <div className="pt-20">
-        <div className="text-[16px] text-[grey] my- ">
+        <div className="text-[16px] text-[grey]">
           Application UI / Application Shells
         </div>
 
